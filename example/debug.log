@@ -1,0 +1,87 @@
+
+<dict>
+	cocos2d.x.version: 2.2.1
+	cocos2d.x.compiled_with_profiler: false
+	cocos2d.x.compiled_with_gl_state_cache: true
+	gl.vendor: ATI Technologies Inc.
+	gl.renderer: AMD Radeon HD 5570
+	gl.version: 4.4.13084 Compatibility Profile Context 14.301.1001.0
+	gl.max_texture_size: 16384
+	gl.max_texture_units: 108
+	gl.supports_PVRTC: false
+	gl.supports_NPOT: true
+	gl.supports_BGRA8888: false
+	gl.supports_discard_framebuffer: false
+	gl.supports_vertex_array_object: true
+</dict>
+lua_loadChunksFromZIP() - load zip file: E:\GameDev\tiger\Slots_Mobile\quick-cocos2d-x\lib\framework_precompiled\framework_precompiled.zip
+lua_loadChunksFromZIP() - loaded chunks count: 54
+------------------------------------------------
+LOAD LUA FILE: E:/OpenSource/SWFUIExport/QuickSWF/example/scripts/main.lua
+------------------------------------------------
+[0.1449] [INFO] 
+[0.1453] [INFO] # DEBUG                        = 2
+[0.1456] [INFO] #
+[0.1464] [INFO] # device.platform              = windows
+[0.1470] [INFO] # device.model                 = unknown
+[0.1476] [INFO] # device.language              = cn
+[0.1482] [INFO] # device.writablePath          = E:\OpenSource\SWFUIExport\QuickSWF\example\
+[0.1493] [INFO] # device.cachePath             = E:\OpenSource\SWFUIExport\QuickSWF\example\
+[0.1510] [INFO] # device.directorySeparator    = \
+[0.1516] [INFO] # device.pathSeparator         = ;
+[0.1523] [INFO] #
+[0.1542] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_WIDTH
+[0.1547] [INFO] # CONFIG_SCREEN_WIDTH          = 640.00
+[0.1555] [INFO] # CONFIG_SCREEN_HEIGHT         = 960.00
+[0.1562] [INFO] # display.widthInPixels        = 640.00
+[0.1570] [INFO] # display.heightInPixels       = 960.00
+[0.1683] [INFO] # display.contentScaleFactor   = 1.00
+[0.1689] [INFO] # display.width                = 640.00
+[0.1706] [INFO] # display.height               = 960.00
+[0.1715] [INFO] # display.cx                   = 320.00
+[0.1722] [INFO] # display.cy                   = 480.00
+[0.1729] [INFO] # display.left                 = 0.00
+[0.1740] [INFO] # display.right                = 640.00
+[0.1747] [INFO] # display.top                  = 960.00
+[0.1761] [INFO] # display.bottom               = 0.00
+[0.1766] [INFO] # display.c_left               = -320.00
+[0.1772] [INFO] # display.c_right              = 320.00
+[0.1778] [INFO] # display.c_top                = 480.00
+[0.1784] [INFO] # display.c_bottom             = -480.00
+[0.1791] [INFO] #
+[0.1799] framework.cc.Event
+[0.1804] framework.cc.Registry
+[0.1809] framework.cc.GameObject
+[0.1814] framework.cc.Registry
+[0.1829] framework.cc.EventProxy
+[0.1836] framework.cc.components.behavior.StateMachine
+[0.1842] framework.cc.components.Component
+[0.1848] framework.cc.components.behavior.EventProtocol
+[0.1854] framework.cc.components.Component
+[0.1860] framework.cc.components.ui.BasicLayoutProtocol
+[0.1868] framework.cc.components.Component
+[0.1873] framework.cc.components.ui.LayoutProtocol
+[0.1878] framework.cc.components.ui.BasicLayoutProtocol
+[0.1891] framework.cc.mvc.init
+[0.1903] framework.cc.mvc.AppBase
+[0.1918] framework.cc.mvc.ModelBase
+[0.1933] framework.cc.ui.init
+[0.1943] framework.cc.ui.UIGroup
+[0.1955] framework.cc.ui.UIBoxLayout
+[0.1963] framework.cc.ui.UILayout
+[0.1974] framework.cc.ui.UIStretch
+[0.1982] framework.cc.ui.UIImage
+[0.1988] framework.cc.ui.UIImage
+[0.1994] framework.cc.ui.UIPushButton
+[0.2000] framework.cc.ui.UIButton
+[0.2006] framework.cc.ui.UICheckBoxButton
+[0.2013] framework.cc.ui.UIButton
+[0.2019] framework.cc.ui.UICheckBoxButtonGroup
+[0.2024] framework.cc.ui.UIBoxLayout
+[0.2031] framework.cc.ui.UICheckBoxButton
+[0.2044] framework.cc.ui.UIGroup
+[0.2050] framework.cc.ui.UILabel
+[0.2057] framework.cc.ui.UISlider
+[0.2064] framework.cc.ui.UIBoxLayout
+[0.2217] [INFO] Scene "MainScene:onEnter()"
+[6.4119] [INFO] Scene "MainScene:onExit()"

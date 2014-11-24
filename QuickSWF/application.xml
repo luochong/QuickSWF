@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<application xmlns="http://ns.adobe.com/air/application/3.4">
+  <id>LuoChonG.QuickSWF</id>
+  <versionNumber>1.0</versionNumber>
+  <filename>QuickSWF</filename>
+  <name>QuickSWF</name>
+  <description>用于手游开发的UI导出工具,可以将swf的元件信息导出成json和图片</description>
+  <copyright>LeoLuo 2014-11-24</copyright>
+  <supportedProfiles>extendedDesktop</supportedProfiles>
+  <initialWindow>
+    <title>QuickSWF - UI导出工具</title>
+    <content>QuickSWF.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <autoOrients>false</autoOrients>
+    <fullScreen>false</fullScreen>
+    <resizable>false</resizable>
+    <minimizable>false</minimizable>
+    <maximizable>false</maximizable>
+  </initialWindow>
+  <!-- 
+	More options:
+	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
+	-->
+  <icon>
+    <image128x128>icons/x128.png</image128x128>
+  </icon>
+</application>
