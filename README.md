@@ -1,4 +1,4 @@
-SWFUIExport
+QuickSWF
 ===========
 
 quick-cocos2d-x开发UI导出工具,将swf中的元件布局信息导出成图片和json配置文件。<br>
@@ -8,7 +8,7 @@ quick-cocos2d-x开发UI导出工具,将swf中的元件布局信息导出成图�
 目录说明
 ---
 * release  工具安装文件，支持 Mac，Win
-* UIExport 工具ActionScript源代码
+* QuickSWF 工具ActionScript源代码
 * scripts  quick-cocos2d-x调用代码 
 * example  使用示例
 
