@@ -1,5 +1,4 @@
 # Build and Release Folders
-bin/
 bin-debug/
 bin-release/
 obj/
@@ -58,3 +57,5 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+*.swf
