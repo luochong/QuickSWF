@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <application xmlns="http://ns.adobe.com/air/application/3.4">
   <id>LuoChonG.QuickSWF</id>
-  <versionNumber>1.0</versionNumber>
+  <versionNumber>2.0.1</versionNumber>
   <filename>QuickSWF</filename>
   <name>QuickSWF</name>
   <description>用于手游开发的UI导出工具,可以将swf的元件信息导出成json和图片</description>

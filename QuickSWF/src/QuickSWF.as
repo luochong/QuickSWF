@@ -299,7 +299,14 @@ package
 			var length:int = clazzKeys.length;
 			for (var i:int = 0; i < length; i++) {
 				clazz = appDomain.getDefinition(clazzKeys[i]) as Class;
-				mc = new clazz() as MovieClip;
+				try 
+				{
+					mc = new clazz() as MovieClip;
+				}
+				catch (err:Error)
+				{
+					mc = null;
+				}
 				if(mc == null){
 					continue;
 				}
@@ -385,8 +392,7 @@ package
 						log(errStr);
 						exportStateLable.textField.textColor = 0xFF0000;
 						exportStateLable.text = errStr;
-					
-						return;
+						//return;
 					}
 				}	
 				mc.scaleX = mc.scaleY = 1;
