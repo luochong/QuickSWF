@@ -132,7 +132,7 @@ function LayoutUtil:createChild_(layer,cname)
 			 node:setSkewX(data.skx)
 			 node:setSkewY(data.sky)
 			 self:setName_(node,data.name,layer)		
-			 node:setContentSize(cc.size(data.w,data.h))	
+			 node:setContentSize(cc.size(data.w/data.sx,data.h/data.sy))
 			 layer:addChild(node)
 		end
 	end
@@ -384,36 +384,54 @@ function LayoutUtil.newButton(imageName, listener)
 end
 
 function LayoutUtil.newSpriteButton(listener)
-    local layer = display.newNode()
-    require("framework.api.EventProtocol").extend(layer)
-    layer:setTouchEnabled(true)
+    local sprite = display.newNode()
+    require("framework.api.EventProtocol").extend(sprite)
+     sprite:setTouchEnabled(true)
+    local isHeightLight = false
     local isMoveed = false
-    layer:addNodeEventListener(cc.NODE_TOUCH_EVENT,function(event)
-        if event.name == "began" then
-            if setAlpha then layer:setOpacity(128) end
+    local scale = 0.95
+    sprite:addNodeEventListener(cc.NODE_TOUCH_EVENT,function(event)
+       if event.name == "began" then
+            if not isHeightLight then
+            	sprite:setScale(scale)
+            	isHeightLight = true
+        	end
             return true
         end
-
-        local touchInLayer = layer:getCascadeBoundingBox():containsPoint(CCPoint(event.x, event.y))
+        local rect = sprite:getCascadeBoundingBox();
+        local touchInSprite = sprite:getCascadeBoundingBox():containsPoint(CCPoint(event.x, event.y))
         if event.name == "moved" then
-            if touchInLayer then
-                if setAlpha then layer:setOpacity(128) end
-                isMoveed = true
+            if touchInSprite then
+            	if not isHeightLight then
+               		sprite:scale(scale)
+               		isHeightLight = true
+        		end
+        		isMoveed = true;
             else
-                layer:setOpacity(255)
+            	if isHeightLight then
+              		sprite:scale(1)
+              		isHeightLight = false
+              	end
             end
         elseif event.name == "ended" then
-            if touchInLayer then 
-            	listener(layer:getTag(),isMoveed)
-            	layer:dispatchEvent({name = "click"})
+            if isHeightLight then
+            	sprite:scale(1)
+            	isHeightLight = false
             end
+            if touchInSprite then 
+            	sprite:dispatchEvent({name = "click"})
+            	listener(sprite:getTag(),isMoveed) 
+           	end
             isMoveed = false
         else
-            layer:setOpacity(255)
+        	if isHeightLight then
+            	sprite:scale(1)
+            	isHeightLight = false
+            end
         end
     end)
 
-    return layer
+    return sprite
 end
 
 function LayoutUtil:createPosNode_(data)
